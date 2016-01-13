@@ -28,14 +28,6 @@
 
                 <article>
                     <section>
-                        <h2>How it works</h2>
-                    <p>Using the addTest method from Modernizr we extend it to do a user agent test for mobile devices.  We are covering around 98% of devices using the following regular expression: <br><br>
-                    <span class="regex">/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/</span>
-                    <br><br>
-                    This includes barely significant outliers and third party browsers. Anything that doesn't make this cut probably can't render any website made past 2004 anyway.</p>
-                    </p>
-                    </section>
-                    <section>
                         <h2>JavaScript</h2>
                         <p>You can use Modernizr.mobiledevice to test via JavaScript<br>
                             <a href="#" id="jstest">Test Here</a>
@@ -43,8 +35,17 @@
                     </section>
                     <section>
                         <h2>CSS</h2>
-                        <p>You can use the html classes mobiledevice or no-mobiledevice</p>
+                        <p>You can use the html classes mobiledevice or no-mobiledevice<br>
+                        Note: you will see a delay in the CSS being applied, to avoid this the UserAgent sniffing would need to be implemented on the backend.</p>
                         <div class="csstest">Mobile Device?</div>
+                    </section>
+                    <section>
+                    <h2>How it works</h2>
+                    <p>Using the addTest method from Modernizr we extend it to do a user agent test for mobile devices.  We are covering around 98% of devices using the following regular expression: <br><br>
+                    <span class="regex">/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/</span>
+                    <br><br>
+                    This includes barely significant outliers and third party browsers. Anything that doesn't make this cut probably can't render any website made past 2004 anyway.</p>
+                    </p>
                     </section>
                 </article>
             </div> <!-- #main -->
