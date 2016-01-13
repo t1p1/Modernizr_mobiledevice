@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Custom Mobile Device Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Custom Mobile Device Test</h1>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <section>
+                        <h2>How it works</h2>
+                    <p>Using the addTest method from Modernizr we extend it to do a user agent test for mobile devices.  We are covering around 98% of devices using the following regular expression: <br><br>
+                    <span class="regex">/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/</span>
+                    <br><br>
+                    This includes barely significant outliers and third party browsers. Anything that doesn't make this cut probably can't render any website made past 2004 anyway.</p>
+                    </p>
+                    </section>
+                    <section>
+                        <h2>JavaScript</h2>
+                        <p>You can use Modernizr.mobiledevice to test via JavaScript<br>
+                            <a href="#" id="jstest">Test Here</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>CSS</h2>
+                        <p>You can use the html classes mobiledevice or no-mobiledevice</p>
+                        <div class="csstest">Mobile Device?</div>
+                    </section>
+                </article>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
